@@ -4,15 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KarstenLinks oct24</title>
+  <title>KarstenLinks OCT24</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic layout styles */
+    body {
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .side-menu {
+      width: 60px;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      border-right: 1px solid #ccc;
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+    .volume-button {
+      margin: 10px 0;
+      cursor: pointer;
+      font-size: 18px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      width: 40px;
+      text-align: center;
+    }
+
+    .container {
+      margin-left: 80px; /* Adjust to accommodate the side menu */
+      padding: 20px;
+      width: 100%;
+    }
+
+    .link-container {
+      margin-top: 20px;
+    }
+
+    .link {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="side-menu">
+    <div class="volume-button">🔊+</div>
+    <div class="volume-button">🔊-</div>
+    <div class="volume-button">🔇</div>
+  </div>
 
   <div class="container">
     <h2>KarstenLinks OCT24</h2>
