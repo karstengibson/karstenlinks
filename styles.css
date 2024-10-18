@@ -6,13 +6,14 @@
 
 body {
   font-family: 'Teko', serif;
-  background-color: #b5d3eb;
+  background: url('your-mountain-image.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   color: #FFFAF4;
   overflow-x: hidden;
+  backdrop-filter: blur(3px);
 }
 
 .container {
@@ -20,20 +21,24 @@ body {
   width: 90%;
   max-width: 360px;
   padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
-h1,
-h2 {
+h1, h2 {
   margin-bottom: 15px;
   font-weight: 400;
+  color: #FFFAF4;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .link-container {
@@ -45,20 +50,21 @@ h2 {
 
 .link {
   display: block;
-  padding: 10px;
+  padding: 15px;
   text-decoration: none;
-  background-color: #DDD9D6;
-  color: #4365E2;
-  border: 10px solid #002147;
-  border-radius: 6px;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
-  font-size: 17px;
+  background: linear-gradient(45deg, #4365E2, #002147);
+  color: #FFFAF4;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 18px;
 }
 
 .link:hover {
-  background-color: #f9f9f9;
-  transform: translateY(-2px);
+  background: linear-gradient(45deg, #002147, #4365E2);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 360px) {
@@ -68,15 +74,15 @@ h2 {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .link {
-    padding: 10px;
-    font-size: 12px;
+    padding: 12px;
+    font-size: 14px;
   }
 }
